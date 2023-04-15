@@ -1,0 +1,15 @@
+#before use this file, change file permission
+#$chmod 600 cron/crontabSetting
+
+####################################
+# management automation
+####################################
+
+## listen new pool creation
+*/10 * * * * APP_LOCATION/scripts/processManager.sh -a listenFromGraph >> /var/log/automation.log
+
+## listen deposits & withdrawals
+*/10 * * * * APP_LOCATION/scripts/processManager.sh -a getTerminalPoolTx >> /var/log/automation.log
+
+## listen tx
+*/15 * * * * APP_LOCATION/scripts/processManager.sh -a getOriginationPoolTx >> /var/log/automation.log
