@@ -1,11 +1,11 @@
 const { ethers } = require('ethers');
 const DEC_18 = ethers.utils.parseEther('1');
 const ETHSCAN_API = {
-  MAINNET: 'QCKWJVPJZV2K1Y6W4XN2TT7F4UYYGB4A69',
-  ARBI: 'PUNJ4YWZCEEPG6UEEUFSGJXM1FKIZEBNHR',
-  POLY: '9N3TU1TTYNA2Y72SAPNJ1K6PH3QAGF1TZ4',
-  OPTI: 'KHGTKJY1X27FR68IW2UCR41YTTKMAGFX39',
-  GOERLI: 'QCKWJVPJZV2K1Y6W4XN2TT7F4UYYGB4A69'
+  MAINNET: '_ETHSCAN_MAINNET_API_',
+  ARBI: '_ETHSCAN_ARBI_API_',
+  POLY: '_ETHSCAN_POLY_API_',
+  OPTI: '_ETHSCAN_OPTI_API_',
+  GOERLI: '_ETHSCAN_GOERLI_API_'
 }
 const GRAPHQL_ENDPOIN = "https://api.thegraph.com/subgraphs/name/pixeltoken/t-mainnet"; // main net
 const GRAPHQL_ENDPOIN_ARBI = "https://api.thegraph.com/subgraphs/name/pixeltoken/t-arbitrum";
